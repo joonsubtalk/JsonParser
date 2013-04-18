@@ -1,6 +1,5 @@
 import com.google.gson.annotations.SerializedName;
 
-
 public class Attr {
 	  @SerializedName("funny") 
 	  public int funny;
@@ -8,4 +7,26 @@ public class Attr {
 	  public int useful;
 	  @SerializedName("cool") 
 	  public int cool;
+	  
+	  // getters and setters
+	  public int get_funny(){
+		  return funny;
+	  }
+	  public void set_funny(int funny){
+		  this.funny = funny;
+	  }
+	  
+	  public int get_useful(){
+		  return useful;
+	  }
+	  public void set_useful(int useful){
+		  this.useful = useful;
+	  }
+	  
+	  public int get_cool(){
+		  return cool;
+	  }
+	  public void set_cool(int cool){
+		  this.cool = cool;
+	  }
 }

@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+
+import java.util.List;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -23,9 +24,8 @@ public class Yelp_Review {
 	@SerializedName("stars")
 	public int stars;
 
-	//@SerializedName("votes")
-	//ArrayList<Attr> attrs;
-	
+	@SerializedName("votes")
+	public Attr[] votes;
 	
 	// get/set methods
 	public String get_business_id() {
@@ -68,6 +68,13 @@ public class Yelp_Review {
 	}
 	public void set_stars(int stars) {
 		this.stars = stars;
+	}
+	
+	public Attr[] get_votes() {
+		return votes;
+	}
+	public void set_votes(Attr[] votes) {
+		this.votes = votes;
 	}
 	
 	@Override
