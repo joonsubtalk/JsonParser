@@ -1,11 +1,13 @@
 /* 
  * Just a simple parsing Demo
- * 4/17/13i 11:54pm
+ * 4/17/13
  */
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
- 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.gson.Gson;
 
 public class JsonParseDemo {
@@ -21,12 +23,24 @@ public class JsonParseDemo {
 			
 			br = new BufferedReader(new FileReader(jsonFilePath));
 			Gson gson = new Gson();
-		    
+		    List<Yelp_Review> yr = new ArrayList<Yelp_Review>();
 			while ((json_String = br.readLine()) != null) {
 				Yelp_Review yp = gson.fromJson(json_String, Yelp_Review.class);
-				System.out.println(yp.toString());
+				yr.add(yp);
+				
+				/* Can toggle to see what's being parsed */
+				//System.out.println(yp.toString());
 			}
 			
+			System.out.println("done");
+			
+			/* Can toggle to see what's been parsed */
+			/*
+			for (Yelp_Review result : yr) {
+				System.out.println(result.toString());
+			}
+			*/
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
