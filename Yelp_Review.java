@@ -74,6 +74,14 @@ public class Yelp_Review {
 		this.stars = stars;
 	}
 
+	public Attr get_votes() {
+		return votes;
+	}
+
+	public void set_votes(Attr votes) {
+		this.votes = votes;
+	}
+	
 	/*
 	 * public List<Attr> get_votes() { return votes; }
 	 * 

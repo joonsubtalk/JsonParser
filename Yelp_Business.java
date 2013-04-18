@@ -156,7 +156,7 @@ public class Yelp_Business {
 	public String toString() {
 		return "type: " + type + "\n" + "business_id: " + business_id + "\n"
 				+ "name: " + name + "\n" + "neighborhoods: " + neighborhoods + "\n"
-				+ "full_address: " + full_address + "\n" + "city: " + stars + "\n"
+				+ "full_address: " + full_address + "\n"
 				+ "city: " + city + "\n" + "state: " + state + "\n"
 				+ "latitude: " + latitude + "\n" + "longitude: " + longitude + "\n"
 				+ "stars: " + stars + "\n" + "review_count: " + review_count + "\n"
