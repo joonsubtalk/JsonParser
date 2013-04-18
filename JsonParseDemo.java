@@ -12,7 +12,7 @@ import com.google.gson.Gson;
 
 public class JsonParseDemo {
 	private static final String jsonFilePath = 
-			"/Users/santoki/yelp/yelp_phoenix_academic_dataset/yelp_academic_dataset_user.json";
+			"/Users/santoki/yelp/yelp_phoenix_academic_dataset/yelp_academic_dataset_checkin.json";
 			// "/Users/santoki/yelp/yelp_phoenix_academic_dataset/yelp_academic_dataset_review.json";
 			// Should replace with relative location
 
@@ -25,10 +25,10 @@ public class JsonParseDemo {
 			br = new BufferedReader(new FileReader(jsonFilePath));
 			Gson gson = new Gson();
 			//List<Yelp_Review> yr = new ArrayList<Yelp_Review>();
-			List<Yelp_User> yr = new ArrayList<Yelp_User>();
+			List<Yelp_Checkin> yr = new ArrayList<Yelp_Checkin>();
 			while ((json_String = br.readLine()) != null) {
 				//Yelp_Review yp = gson.fromJson(json_String, Yelp_Review.class);
-				Yelp_User yp = gson.fromJson(json_String, Yelp_User.class);
+				Yelp_Checkin yp = gson.fromJson(json_String, Yelp_Checkin.class);
 				yr.add(yp);
 				
 				System.out.println(yp.toString());
