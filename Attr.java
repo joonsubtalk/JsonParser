@@ -32,9 +32,10 @@ public class Attr {
 	public void set_cool(int cool) {
 		this.cool = cool;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "funny: " + funny + "; " + "useful: " + useful + "; " + "cool: " + cool + ";\n";
+		return "funny: " + funny + "; " + "useful: " + useful + "; " + "cool: "
+				+ cool + ";\n";
 	}
 }
