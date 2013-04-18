@@ -17,7 +17,7 @@ public class Yelp_Review {
 	public String user_id;
 
 	@SerializedName("stars")
-	public int stars;
+	public double stars;
 
 	@SerializedName("votes")
 	private Attr votes; // public Attr[] votes;
@@ -66,7 +66,7 @@ public class Yelp_Review {
 		this.user_id = user_id;
 	}
 
-	public int get_stars() {
+	public double get_stars() {
 		return stars;
 	}
 
